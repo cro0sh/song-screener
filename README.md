@@ -4,8 +4,10 @@ This is the readme for the song screener v0.8. It was developed on linux mint (b
 
 How to use:
 
-Download all required packages. This means googling or using pip or install.packages("tidytext") as an example. 
-
+1. Download all required packages. This means googling or using pip or install.packages("tidytext") as an example. 
+2. Search and replace all client_id and client_secret variables in Songscreenerv0.8.py with your spotify API credientials
+3. There is a bug in the R code you will have to fix because the package for it changed (it was built in 2017/2018).
+4. Thank you to all the packages and developers that made this app possible. 
 
 import tkinter as tk                # python 3
 from tkinter import font  as tkfont # python 3
