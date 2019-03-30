@@ -4,49 +4,12 @@ This is the readme for the song screener v0.8. It was developed on linux mint (b
 
 How to use:
 
-1. Download all required packages. This means googling or using pip or install.packages("tidytext") as an example. 
+1. Download all required packages. This means googling or using pip or install.packages("tidytext") as an example.
 2. Search and replace all client_id and client_secret variables in Songscreenerv0.8.py with your spotify API credientials
 3. There is a bug in the R code you will have to fix because the package for it changed (it was built in 2017/2018).
 4. Thank you to all the packages and developers that made this app possible. 
+5. Important tip to get working on linux: 
+	sudo apt-get install liblapack-dev
+	sudo apt-get install libblas-dev
 
-import tkinter as tk                # python 3
-from tkinter import font  as tkfont # python 3
-from tkinter import *
-import rpy2.robjects as robjects
-import math, datetime
-##import rpy2.robjects.lib.rvest as rv
-##import rpy2.robjects.lib.tidytext as ty
-from rpy2.robjects.packages import importr
-base = importr('base')
-tidy = importr('tidytext')
-rvest = importr('rvest')
-dplyr = importr('dplyr', on_conflict="warn")
-ggplot2 = importr('ggplot2')
-stringr = importr('stringr')
-ggraph = importr('ggraph')
-igraph = importr('igraph')
-magick = importr('magick')
-stringr = importr('stringr')
-from PIL import Image, ImageTk
-import os
-from tkinter.ttk import Progressbar
-import time
-import threading
-##import functools
-##from __future__ import print_function    # (at top of module)
-from spotipy.oauth2 import SpotifyClientCredentials
-from spotipy.oauth2 import *
-import json
-import spotipy
-import time
-import sys
-import pprint
-import pandas as pd
-import pprint
-import sys
-import os
-import subprocess
-##from spotipy.oauth2 import SpotifyClientCredentials
-##import spotipy
-import spotipy.util as util
 
