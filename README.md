@@ -10,5 +10,6 @@ How to use:
 4. Important tip to get working on linux: 
 	sudo apt-get install liblapack-dev
 	sudo apt-get install libblas-dev
+5. The directories need to be changed. It will ask you for a few files before it runs -> my advice is to make the files and keep them blank for the time being.
 
 
