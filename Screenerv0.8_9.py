@@ -1574,7 +1574,7 @@ playlist_filename <- paste0("/home/c/", "playlist ", lst[[1]][[1]], ".csv")
         
         print(self.variable_a.get())
 ##        playlist_list = list(playlist_list)
-        client_credentials_manager = SpotifyClientCredentials(client_id = '294447c8bb9848408019f91832fb9ed7', client_secret = '795e6b5c2b7b4d93a1318a7da74487cc')
+        client_credentials_manager = SpotifyClientCredentials(client_id = 'replace_me', client_secret = 'replace_me')
         self.sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
 ##        print('PLAYLIST LIST INSIDE GET ANALTICS BTN', playlist_list, 'TYPE ***', type(playlist_list))
         if playlist_list is not None and isinstance(playlist_list, str):
@@ -3225,7 +3225,7 @@ screen4.75 <- function(alstofsongnames, playlist, sentiment_selections) {
         
 
         def search(search_str, lst=False):
-            client_credentials_manager = SpotifyClientCredentials(client_id = '294447c8bb9848408019f91832fb9ed7', client_secret = '795e6b5c2b7b4d93a1318a7da74487cc')
+            client_credentials_manager = SpotifyClientCredentials(client_id = 'replace_me', client_secret = 'replace_me')
             sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
 
 ##            search_str = 'milky way'
@@ -3263,10 +3263,10 @@ screen4.75 <- function(alstofsongnames, playlist, sentiment_selections) {
 
 ##user_playlist_create(self, user, name, public=True, description='')
         def make_playlist(playlist_name, playlist_description='', scope_private=False):
-            client_id = '9bfb36773d67408db3d23896f9e6eacb' ## NEW
-            client_secret = '9ed4d939babe4196ac47d5155c438330' ## NEW
+            client_id = 'replace_me' ## NEW
+            client_secret = 'replace_me' ## NEW
             redirect_uri = 'http://localhost:8888/callback'
-            username= 'cro0sh'
+            username= 'replace_me'
             ##scope = 'playlist-modify-private'
             if not scope_private:
                 scope = 'playlist-modify-public'
@@ -3316,11 +3316,11 @@ screen4.75 <- function(alstofsongnames, playlist, sentiment_selections) {
         track_uids = search(search_str=self.not_in_bad_agg_fixed, lst=True)
 
         def add_tracks(list_of_track_uids, scope_private=False):
-            client_id = '9bfb36773d67408db3d23896f9e6eacb' ## NEW
-            client_secret = '9ed4d939babe4196ac47d5155c438330' ## NEW
+            client_id = 'replace_me' ## NEW
+            client_secret = 'replace_me' ## NEW
             redirect_uri = 'http://localhost:8888/callback'
 
-            username = 'cro0sh'
+            username = 'replace_me'
             if not scope_private:
                 scope = 'playlist-modify-public'
             else:
@@ -3360,10 +3360,10 @@ screen4.75 <- function(alstofsongnames, playlist, sentiment_selections) {
 ##        self.mySubmitButton4 = Button(self.top3, text='Add Tracks', command=add_tracks)
 ##        self.mySubmitButton4.pack()
     def make_playlist(self, playlist_name, playlist_description='', scope_private=False):
-            client_id = '9bfb36773d67408db3d23896f9e6eacb' ## NEW
-            client_secret = '9ed4d939babe4196ac47d5155c438330' ## NEW
+            client_id = 'replace_me' ## NEW
+            client_secret = 'replace_me' ## NEW
             redirect_uri = 'http://localhost:8888/callback'
-            username= 'cro0sh'
+            username= 'replace_me'
             ##scope = 'playlist-modify-private'
             if not scope_private:
                 scope = 'playlist-modify-public'
@@ -3396,11 +3396,11 @@ screen4.75 <- function(alstofsongnames, playlist, sentiment_selections) {
                 print("Can't get token for", username)
                 
     def add_tracks(self, list_of_track_uids, scope_private=False):
-            client_id = '9bfb36773d67408db3d23896f9e6eacb' ## NEW
-            client_secret = '9ed4d939babe4196ac47d5155c438330' ## NEW
+            client_id = 'replace_me' ## NEW
+            client_secret = 'replace_me' ## NEW
             redirect_uri = 'http://localhost:8888/callback'
 
-            username = 'cro0sh'
+            username = 'replace_me'
             if not scope_private:
                 scope = 'playlist-modify-public'
             else:
@@ -3442,9 +3442,9 @@ screen4.75 <- function(alstofsongnames, playlist, sentiment_selections) {
         def get_playlist_results(playlist):
 ##            with open('/home/c/playlists/playlist_uri.txt', newline='') as txtfile:
 ##                playlist_uri = txtfile.read()
-            client_credentials_manager = SpotifyClientCredentials(client_id = '294447c8bb9848408019f91832fb9ed7', client_secret = '795e6b5c2b7b4d93a1318a7da74487cc')
+            client_credentials_manager = SpotifyClientCredentials(client_id = 'replace_me', client_secret = 'replace_me')
             sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
-        
+
             username = playlist.split(':')[2]
             playlist_id = playlist.split(':')[4]        
             results = sp.user_playlist(username, playlist_id)
@@ -3471,8 +3471,8 @@ screen4.75 <- function(alstofsongnames, playlist, sentiment_selections) {
         
             
         def top(artist_uid):
-            client_id = '9bfb36773d67408db3d23896f9e6eacb' ## NEW
-            client_secret = '9ed4d939babe4196ac47d5155c438330' ## NEW
+            client_id = 'replace_me' ## NEW
+            client_secret = 'replace_me' ## NEW
             redirect_uri = 'http://localhost:8888/callback'
             username= 'cro0sh'
             ##scope = 'playlist-modify-private'

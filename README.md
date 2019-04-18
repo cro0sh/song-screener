@@ -11,5 +11,4 @@ How to use:
 	sudo apt-get install liblapack-dev
 	sudo apt-get install libblas-dev
 5. The directories need to be changed. It will ask you for a few files before it runs -> my advice is to make the files and keep them blank for the time being.
-
-
+6. Search and replace "replace_me" with your api credentials throughout the app. There probably should be 1 function that handles this instead of repeating it throughout.
