@@ -39,7 +39,7 @@ import subprocess
 ##import spotipy
 import spotipy.util as util
 
-class SampleApp(tk.Tk):
+class MakeContainer(tk.Tk):
 
     def __init__(self, *args, **kwargs):
         tk.Tk.__init__(self, *args, **kwargs)
@@ -3646,7 +3646,7 @@ class PageFive(tk.Frame):
 
 
 if __name__ == "__main__":
-    app = SampleApp()
+    app = MakeContainer()
     app.geometry('1920x1080+10+50')
     app.title('Screener v0.8')
     app.mainloop()
